@@ -1,0 +1,165 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+
+    // ── Band backgrounds ──────────────────────────────────────────────────
+
+    { "id": "band-ui",       "type": "rectangle", "x": 80, "y": 5,   "width": 910, "height": 200, "strokeColor": "#93c5fd", "backgroundColor": "#eff6ff", "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 60,  "angle": 0, "seed": 1 },
+    { "id": "band-api",      "type": "rectangle", "x": 80, "y": 215, "width": 910, "height": 90,  "strokeColor": "#fde68a", "backgroundColor": "#fefce8", "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 60,  "angle": 0, "seed": 2 },
+    { "id": "band-agents",   "type": "rectangle", "x": 80, "y": 315, "width": 910, "height": 90,  "strokeColor": "#86efac", "backgroundColor": "#f0fdf4", "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 60,  "angle": 0, "seed": 3 },
+    { "id": "band-tools",    "type": "rectangle", "x": 80, "y": 415, "width": 500, "height": 80,  "strokeColor": "#d8b4fe", "backgroundColor": "#fdf4ff", "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 60,  "angle": 0, "seed": 4 },
+    { "id": "band-external", "type": "rectangle", "x": 590, "y": 415, "width": 400, "height": 80,  "strokeColor": "#fdba74", "backgroundColor": "#fff7ed", "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 60,  "angle": 0, "seed": 5 },
+
+    // ── Band labels ───────────────────────────────────────────────────────
+
+    { "id": "lbl-ui",       "type": "text", "x": 5,  "y": 90,  "width": 70, "height": 20, "text": "UI",       "fontSize": 11, "fontFamily": 3, "textAlign": "right", "strokeColor": "#3b82f6", "angle": 0, "seed": 10 },
+    { "id": "lbl-api",      "type": "text", "x": 5,  "y": 255, "width": 70, "height": 20, "text": "API",      "fontSize": 11, "fontFamily": 3, "textAlign": "right", "strokeColor": "#ca8a04", "angle": 0, "seed": 11 },
+    { "id": "lbl-agents",   "type": "text", "x": 5,  "y": 355, "width": 70, "height": 20, "text": "AGENTS",   "fontSize": 11, "fontFamily": 3, "textAlign": "right", "strokeColor": "#16a34a", "angle": 0, "seed": 12 },
+    { "id": "lbl-tools",    "type": "text", "x": 5,  "y": 450, "width": 70, "height": 20, "text": "TOOLS",    "fontSize": 11, "fontFamily": 3, "textAlign": "right", "strokeColor": "#9333ea", "angle": 0, "seed": 13 },
+    { "id": "lbl-external", "type": "text", "x": 590,"y": 400, "width": 70, "height": 16, "text": "EXTERNAL", "fontSize": 11, "fontFamily": 3, "textAlign": "left",  "strokeColor": "#ea580c", "angle": 0, "seed": 14 },
+
+    // ── UI Layer ──────────────────────────────────────────────────────────
+
+    { "id": "page",            "type": "rectangle", "x": 390, "y": 20,  "width": 210, "height": 50, "strokeColor": "#1e40af", "backgroundColor": "#dbeafe", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 20 },
+    { "id": "page-lbl",        "type": "text",      "x": 430, "y": 36,  "width": 130, "height": 20, "text": "page.tsx\norchestrator", "fontSize": 12, "fontFamily": 3, "textAlign": "center", "strokeColor": "#1e3a8a", "angle": 0, "seed": 21 },
+
+    { "id": "research-panel",  "type": "rectangle", "x": 95,  "y": 95,  "width": 160, "height": 45, "strokeColor": "#374151", "backgroundColor": "#f9fafb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 22 },
+    { "id": "rp-lbl",          "type": "text",      "x": 115, "y": 111, "width": 120, "height": 16, "text": "ResearchPanel",       "fontSize": 12, "fontFamily": 3, "textAlign": "center", "strokeColor": "#111827", "angle": 0, "seed": 23 },
+
+    { "id": "chat-panel",      "type": "rectangle", "x": 735, "y": 95,  "width": 150, "height": 45, "strokeColor": "#374151", "backgroundColor": "#f9fafb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 24 },
+    { "id": "cp-lbl",          "type": "text",      "x": 755, "y": 111, "width": 110, "height": 16, "text": "ChatPanel",           "fontSize": 12, "fontFamily": 3, "textAlign": "center", "strokeColor": "#111827", "angle": 0, "seed": 25 },
+
+    { "id": "loading-state",   "type": "rectangle", "x": 95,  "y": 158, "width": 115, "height": 35, "strokeColor": "#6b7280", "backgroundColor": "#f3f4f6", "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100, "angle": 0, "seed": 26 },
+    { "id": "ls-lbl",          "type": "text",      "x": 98,  "y": 169, "width": 110, "height": 14, "text": "LoadingState",        "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#374151", "angle": 0, "seed": 27 },
+
+    { "id": "topic-card",      "type": "rectangle", "x": 225, "y": 158, "width": 95,  "height": 35, "strokeColor": "#6b7280", "backgroundColor": "#f3f4f6", "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100, "angle": 0, "seed": 28 },
+    { "id": "tc-lbl",          "type": "text",      "x": 228, "y": 169, "width": 90,  "height": 14, "text": "TopicCard",           "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#374151", "angle": 0, "seed": 29 },
+
+    { "id": "axis-badge",      "type": "rectangle", "x": 335, "y": 158, "width": 90,  "height": 35, "strokeColor": "#6b7280", "backgroundColor": "#f3f4f6", "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100, "angle": 0, "seed": 30 },
+    { "id": "ab-lbl",          "type": "text",      "x": 338, "y": 169, "width": 85,  "height": 14, "text": "AxisBadge",           "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#374151", "angle": 0, "seed": 31 },
+
+    { "id": "use-chat",        "type": "rectangle", "x": 735, "y": 158, "width": 150, "height": 35, "strokeColor": "#6b7280", "backgroundColor": "#f3f4f6", "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100, "angle": 0, "seed": 32 },
+    { "id": "uc-lbl",          "type": "text",      "x": 738, "y": 169, "width": 145, "height": 14, "text": "useChat (AI SDK React)", "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#374151", "angle": 0, "seed": 33 },
+
+    // ── API Layer ─────────────────────────────────────────────────────────
+
+    { "id": "api-changelog",   "type": "rectangle", "x": 90,  "y": 228, "width": 110, "height": 38, "strokeColor": "#92400e", "backgroundColor": "#fffbeb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 40 },
+    { "id": "acl-lbl",         "type": "text",      "x": 92,  "y": 234, "width": 108, "height": 28, "text": "/api/axis\n/changelog", "fontSize": 10, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 41 },
+
+    { "id": "api-community",   "type": "rectangle", "x": 210, "y": 228, "width": 110, "height": 38, "strokeColor": "#92400e", "backgroundColor": "#fffbeb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 42 },
+    { "id": "aco-lbl",         "type": "text",      "x": 212, "y": 234, "width": 108, "height": 28, "text": "/api/axis\n/community", "fontSize": 10, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 43 },
+
+    { "id": "api-gap",         "type": "rectangle", "x": 330, "y": 228, "width": 90,  "height": 38, "strokeColor": "#92400e", "backgroundColor": "#fffbeb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 44 },
+    { "id": "ag-lbl",          "type": "text",      "x": 332, "y": 234, "width": 88,  "height": 28, "text": "/api/axis\n/gap",       "fontSize": 10, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 45 },
+
+    { "id": "api-competitors", "type": "rectangle", "x": 430, "y": 228, "width": 120, "height": 38, "strokeColor": "#92400e", "backgroundColor": "#fffbeb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 46 },
+    { "id": "acp-lbl",         "type": "text",      "x": 432, "y": 234, "width": 118, "height": 28, "text": "/api/axis\n/competitors", "fontSize": 10, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 47 },
+
+    { "id": "api-synthesize",  "type": "rectangle", "x": 560, "y": 228, "width": 120, "height": 38, "strokeColor": "#92400e", "backgroundColor": "#fffbeb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 48 },
+    { "id": "as-lbl",          "type": "text",      "x": 562, "y": 240, "width": 118, "height": 16, "text": "/api/synthesize",      "fontSize": 10, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 49 },
+
+    { "id": "api-chat",        "type": "rectangle", "x": 690, "y": 228, "width": 90,  "height": 38, "strokeColor": "#92400e", "backgroundColor": "#fffbeb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 50 },
+    { "id": "ach-lbl",         "type": "text",      "x": 692, "y": 240, "width": 88,  "height": 16, "text": "/api/chat",            "fontSize": 10, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 51 },
+
+    { "id": "api-brief",       "type": "rectangle", "x": 790, "y": 228, "width": 90,  "height": 38, "strokeColor": "#92400e", "backgroundColor": "#fffbeb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 52 },
+    { "id": "abr-lbl",         "type": "text",      "x": 792, "y": 240, "width": 88,  "height": 16, "text": "/api/brief",           "fontSize": 10, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 53 },
+
+    { "id": "emitter",         "type": "rectangle", "x": 890, "y": 228, "width": 95,  "height": 38, "strokeColor": "#6b7280", "backgroundColor": "#f1f5f9", "fillStyle": "solid", "strokeWidth": 1, "roughness": 1, "opacity": 100, "angle": 0, "seed": 54 },
+    { "id": "em-lbl",          "type": "text",      "x": 892, "y": 234, "width": 92,  "height": 28, "text": "emitter.ts\nAsyncLocalStorage", "fontSize": 9, "fontFamily": 3, "textAlign": "center", "strokeColor": "#374151", "angle": 0, "seed": 55 },
+
+    // ── Agent Layer ───────────────────────────────────────────────────────
+
+    { "id": "agent-changelog",   "type": "rectangle", "x": 90,  "y": 328, "width": 118, "height": 38, "strokeColor": "#1d4ed8", "backgroundColor": "#eff6ff", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 60 },
+    { "id": "aclag-lbl",         "type": "text",      "x": 92,  "y": 340, "width": 116, "height": 16, "text": "changelogAgent",   "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#1e3a8a", "angle": 0, "seed": 61 },
+
+    { "id": "agent-community",   "type": "rectangle", "x": 218, "y": 328, "width": 118, "height": 38, "strokeColor": "#15803d", "backgroundColor": "#f0fdf4", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 62 },
+    { "id": "acoma-lbl",         "type": "text",      "x": 220, "y": 340, "width": 116, "height": 16, "text": "communityAgent",   "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#14532d", "angle": 0, "seed": 63 },
+
+    { "id": "agent-gap",         "type": "rectangle", "x": 346, "y": 328, "width": 100, "height": 38, "strokeColor": "#854d0e", "backgroundColor": "#fefce8", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 64 },
+    { "id": "agap-lbl",          "type": "text",      "x": 348, "y": 340, "width": 98,  "height": 16, "text": "gapAgent",         "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#78350f", "angle": 0, "seed": 65 },
+
+    { "id": "agent-competitors", "type": "rectangle", "x": 456, "y": 328, "width": 130, "height": 38, "strokeColor": "#6b21a8", "backgroundColor": "#fdf4ff", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 66 },
+    { "id": "acomp-lbl",         "type": "text",      "x": 458, "y": 340, "width": 128, "height": 16, "text": "competitorsAgent", "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#581c87", "angle": 0, "seed": 67 },
+
+    { "id": "agent-distill",     "type": "rectangle", "x": 596, "y": 328, "width": 108, "height": 38, "strokeColor": "#374151", "backgroundColor": "#f9fafb", "fillStyle": "solid", "strokeWidth": 2,   "roughness": 1, "opacity": 100, "angle": 0, "seed": 68 },
+    { "id": "adist-lbl",         "type": "text",      "x": 598, "y": 340, "width": 106, "height": 16, "text": "distillAgent",     "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#111827", "angle": 0, "seed": 69 },
+
+    { "id": "agent-editorial",   "type": "rectangle", "x": 714, "y": 328, "width": 118, "height": 38, "strokeColor": "#374151", "backgroundColor": "#f9fafb", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 70 },
+    { "id": "aed-lbl",           "type": "text",      "x": 716, "y": 340, "width": 116, "height": 16, "text": "editorialAgent",   "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#111827", "angle": 0, "seed": 71 },
+
+    // ── Tools Layer ───────────────────────────────────────────────────────
+
+    { "id": "tool-fetch",     "type": "rectangle", "x": 90,  "y": 428, "width": 120, "height": 38, "strokeColor": "#7e22ce", "backgroundColor": "#faf5ff", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 80 },
+    { "id": "tf-lbl",         "type": "text",      "x": 92,  "y": 440, "width": 118, "height": 16, "text": "fetchUrlTool",         "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#581c87", "angle": 0, "seed": 81 },
+
+    { "id": "tool-community", "type": "rectangle", "x": 220, "y": 428, "width": 155, "height": 38, "strokeColor": "#7e22ce", "backgroundColor": "#faf5ff", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 82 },
+    { "id": "tco-lbl",        "type": "text",      "x": 222, "y": 440, "width": 153, "height": 16, "text": "searchCommunityTool",  "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#581c87", "angle": 0, "seed": 83 },
+
+    { "id": "tool-competitor","type": "rectangle", "x": 385, "y": 428, "width": 155, "height": 38, "strokeColor": "#7e22ce", "backgroundColor": "#faf5ff", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 84 },
+    { "id": "tcp-lbl",        "type": "text",      "x": 387, "y": 440, "width": 153, "height": 16, "text": "searchCompetitorTool", "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#581c87", "angle": 0, "seed": 85 },
+
+    // ── External Layer ────────────────────────────────────────────────────
+
+    { "id": "ext-gateway",    "type": "rectangle", "x": 600, "y": 428, "width": 185, "height": 38, "strokeColor": "#c2410c", "backgroundColor": "#fff7ed", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 90 },
+    { "id": "eg-lbl",         "type": "text",      "x": 602, "y": 434, "width": 183, "height": 28, "text": "Vercel AI Gateway\n→ kimi-k2.5",  "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#9a3412", "angle": 0, "seed": 91 },
+
+    { "id": "ext-tavily",     "type": "rectangle", "x": 795, "y": 428, "width": 185, "height": 38, "strokeColor": "#c2410c", "backgroundColor": "#fff7ed", "fillStyle": "solid", "strokeWidth": 1.5, "roughness": 1, "opacity": 100, "angle": 0, "seed": 92 },
+    { "id": "et-lbl",         "type": "text",      "x": 797, "y": 440, "width": 183, "height": 16, "text": "Tavily API",              "fontSize": 11, "fontFamily": 3, "textAlign": "center", "strokeColor": "#9a3412", "angle": 0, "seed": 93 },
+
+    // ── Arrows ────────────────────────────────────────────────────────────
+
+    // page → ResearchPanel
+    { "id": "arr-page-rp",  "type": "arrow", "x": 390, "y": 70,  "width": -215, "height": 50,  "points": [[0,0],[-215,50]],  "strokeColor": "#374151", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 100, "startArrowhead": null, "endArrowhead": "arrow" },
+    // page → ChatPanel
+    { "id": "arr-page-cp",  "type": "arrow", "x": 600, "y": 70,  "width": 245,  "height": 50,  "points": [[0,0],[245,50]],   "strokeColor": "#374151", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 101, "startArrowhead": null, "endArrowhead": "arrow" },
+
+    // page → 4 axis routes (SSE, parallel) — one representative arrow with label
+    { "id": "arr-page-api", "type": "arrow", "x": 495, "y": 70,  "width": 0,    "height": 158, "points": [[0,0],[0,158]],    "strokeColor": "#ca8a04", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 102, "startArrowhead": null, "endArrowhead": "arrow" },
+    { "id": "arr-page-api-lbl", "type": "text", "x": 500, "y": 130, "width": 110, "height": 28, "text": "SSE streams\n(parallel)", "fontSize": 10, "fontFamily": 3, "textAlign": "left", "strokeColor": "#ca8a04", "angle": 0, "seed": 103 },
+
+    // useChat → api/chat
+    { "id": "arr-uc-chat",  "type": "arrow", "x": 810, "y": 193, "width": -85,  "height": 35,  "points": [[0,0],[-85,35]],   "strokeColor": "#374151", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 104, "startArrowhead": null, "endArrowhead": "arrow" },
+
+    // axis routes → axis agents (4 arrows, shown as one)
+    { "id": "arr-api-agents","type": "arrow", "x": 310, "y": 266, "width": 0,    "height": 62,  "points": [[0,0],[0,62]],     "strokeColor": "#16a34a", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 105, "startArrowhead": null, "endArrowhead": "arrow" },
+
+    // axis agents → distillAgent
+    { "id": "arr-axag-dist","type": "arrow", "x": 560, "y": 347, "width": 36,   "height": 0,   "points": [[0,0],[36,0]],     "strokeColor": "#374151", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 106, "startArrowhead": null, "endArrowhead": "arrow" },
+    { "id": "arr-axag-dist-lbl","type": "text","x": 562,"y": 330,"width": 32,   "height": 14,  "text": "distill",           "fontSize": 9,  "fontFamily": 3, "textAlign": "center", "strokeColor": "#374151", "angle": 0, "seed": 107 },
+
+    // synthesize → distillAgent
+    { "id": "arr-syn-dist", "type": "arrow", "x": 650, "y": 266, "width": 0,    "height": 62,  "points": [[0,0],[0,62]],     "strokeColor": "#374151", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 108, "startArrowhead": null, "endArrowhead": "arrow" },
+    { "id": "arr-syn-lbl",  "type": "text",  "x": 655, "y": 290, "width": 55,   "height": 14,  "text": "rank+merge",        "fontSize": 9,  "fontFamily": 3, "textAlign": "left",   "strokeColor": "#374151", "angle": 0, "seed": 109 },
+
+    // api/chat → editorialAgent
+    { "id": "arr-chat-ed",  "type": "arrow", "x": 735, "y": 266, "width": 38,   "height": 62,  "points": [[0,0],[38,62]],    "strokeColor": "#374151", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 110, "startArrowhead": null, "endArrowhead": "arrow" },
+
+    // axis agents → tools
+    { "id": "arr-ag-tools", "type": "arrow", "x": 310, "y": 366, "width": 0,    "height": 62,  "points": [[0,0],[0,62]],     "strokeColor": "#9333ea", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 111, "startArrowhead": null, "endArrowhead": "arrow" },
+
+    // tools → Tavily
+    { "id": "arr-tools-tav","type": "arrow", "x": 540, "y": 447, "width": 255,  "height": 0,   "points": [[0,0],[255,0]],    "strokeColor": "#ea580c", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 112, "startArrowhead": null, "endArrowhead": "arrow" },
+
+    // all agents → AI Gateway
+    { "id": "arr-ag-gw",    "type": "arrow", "x": 690, "y": 366, "width": 0,    "height": 62,  "points": [[0,0],[0,62]],     "strokeColor": "#ea580c", "strokeWidth": 1.5, "roughness": 1, "opacity": 80, "angle": 0, "seed": 113, "startArrowhead": null, "endArrowhead": "arrow" },
+    { "id": "arr-ag-gw-lbl","type": "text",  "x": 694, "y": 390, "width": 60,   "height": 14,  "text": "LLM calls",         "fontSize": 9,  "fontFamily": 3, "textAlign": "left",   "strokeColor": "#ea580c", "angle": 0, "seed": 114 },
+
+    // ResearchPanel → LoadingState + TopicCard
+    { "id": "arr-rp-ls",    "type": "arrow", "x": 155, "y": 140, "width": 0,    "height": 18,  "points": [[0,0],[0,18]],     "strokeColor": "#6b7280", "strokeWidth": 1, "roughness": 1, "opacity": 80, "angle": 0, "seed": 115, "startArrowhead": null, "endArrowhead": "arrow" },
+    { "id": "arr-rp-tc",    "type": "arrow", "x": 272, "y": 140, "width": 0,    "height": 18,  "points": [[0,0],[0,18]],     "strokeColor": "#6b7280", "strokeWidth": 1, "roughness": 1, "opacity": 80, "angle": 0, "seed": 116, "startArrowhead": null, "endArrowhead": "arrow" },
+    // TopicCard → AxisBadge
+    { "id": "arr-tc-ab",    "type": "arrow", "x": 320, "y": 175, "width": 15,   "height": 0,   "points": [[0,0],[15,0]],     "strokeColor": "#6b7280", "strokeWidth": 1, "roughness": 1, "opacity": 80, "angle": 0, "seed": 117, "startArrowhead": null, "endArrowhead": "arrow" },
+
+    // axis routes → emitter (uses)
+    { "id": "arr-api-emit", "type": "arrow", "x": 560, "y": 247, "width": 330,  "height": 0,   "points": [[0,0],[330,0]],    "strokeColor": "#94a3b8", "strokeWidth": 1, "roughness": 1, "opacity": 70, "angle": 0, "seed": 118, "startArrowhead": null, "endArrowhead": "arrow" },
+    { "id": "arr-emit-lbl", "type": "text",  "x": 680, "y": 233, "width": 60,   "height": 12,  "text": "SSE emit",          "fontSize": 9,  "fontFamily": 3, "textAlign": "center",  "strokeColor": "#94a3b8", "angle": 0, "seed": 119 }
+
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  },
+  "files": {}
+}

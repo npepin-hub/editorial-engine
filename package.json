@@ -1,0 +1,39 @@
+{
+  "name": "blog-editorial-engine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.50",
+    "@ai-sdk/react": "^3.0.148",
+    "@mastra/ai-sdk": "^1.3.1",
+    "@mastra/core": "^1.22.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tavily/core": "^0.7.2",
+    "@upstash/redis": "^1.37.0",
+    "ai": "^6.0.146",
+    "mastra": "^1.3.20",
+    "next": "16.2.2",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "roughjs": "^4.6.6",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
