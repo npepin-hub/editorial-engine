@@ -63,8 +63,8 @@ npm install
 
 # 4. Set up environment variables
 cp .env.example .env.local             # if an example file exists, otherwise create .env.local manually
-# Fill in AI_GATEWAY_API_KEY, MODEL_ID, TAVILY_API_KEY, UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN
-# (see Environment variables section below)
+# Fill in AI_GATEWAY_API_KEY, MODEL_ID, TAVILY_API_KEY
+# (see Environment variables section below — Upstash vars are not required for this version)
 
 # 5. Start the dev server
 npm run dev
@@ -112,8 +112,8 @@ Set these in your Vercel project settings or in a local `.env.local` file:
 | `AI_GATEWAY_API_KEY` | Vercel AI Gateway API key. All agents route through `https://ai-gateway.vercel.sh/v1`. Not needed on Vercel deployments — the platform injects an OIDC token automatically. Required locally. |
 | `MODEL_ID` | Model identifier passed to the gateway. Format: `creator/model-name` (e.g. `moonshotai/kimi-k2.5`, `anthropic/claude-sonnet-4-6`). Swapping the model requires only this env var change — no code changes. |
 | `TAVILY_API_KEY` | [Tavily](https://tavily.com) API key. Used by agents that run web searches. |
-| `UPSTASH_REDIS_REST_URL` | Upstash Redis REST endpoint. Used by `Redis.fromEnv()` in `src/mastra/index.ts`. Auto-set when provisioned via the Vercel Marketplace. |
-| `UPSTASH_REDIS_REST_TOKEN` | Upstash Redis REST token. Auto-set when provisioned via the Vercel Marketplace. |
+| `UPSTASH_REDIS_REST_URL` | **Not required for this version.** Reserved for the incremental enrichment feature (see [Upstash incremental enrichment](#upstash-incremental-enrichment)). Auto-set when provisioned via the Vercel Marketplace. |
+| `UPSTASH_REDIS_REST_TOKEN` | **Not required for this version.** Reserved for the incremental enrichment feature (see [Upstash incremental enrichment](#upstash-incremental-enrichment)). Auto-set when provisioned via the Vercel Marketplace. |
 | `TRACE_ENABLED` | Optional. Set to `true` to log tool call details and agent steps to the console. |
 
 Pull them locally once the project is linked:
@@ -269,7 +269,7 @@ Extend the same agent to prioritize an existing backlog of drafts by publish-rea
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| `Redis.fromEnv()` error locally | Missing `UPSTASH_REDIS_REST_URL` / `_TOKEN` | Run `vercel env pull .env.local` |
+| `Redis.fromEnv()` error locally | Upstash vars set but empty or malformed | These vars are not required for the current version — remove them from `.env.local` if present, or provision Upstash via the Vercel Marketplace for the incremental enrichment path |
 | Axis route 500 | Tavily key missing or invalid | Check `.env.local` → `TAVILY_API_KEY` |
 | Gateway auth error | `AI_GATEWAY_API_KEY` wrong or absent | Regenerate in Vercel dashboard → AI Gateway → API Keys |
 | Route timeout locally | Slow Tavily fetch on cold start | Retry once; try `vercel dev` for closer prod parity |
